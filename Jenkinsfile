@@ -12,7 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    sh './non_existent_executable'
+                    sh './output'
                 }
             }
         }
