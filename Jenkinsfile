@@ -5,7 +5,7 @@ pipeline {
             steps {
                 script {
                    
-                    sh 'g++ task_5.cpp -o output'
+                    sh 'g++ nons.cpp -o output'
                 }
             }
         }
