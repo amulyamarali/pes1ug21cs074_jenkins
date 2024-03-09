@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                   
+                    build "pes1ug21cs121-1"
                     sh 'g++ task_5.cpp -o output'
                 }
             }
@@ -12,7 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    sh './out'
+                    sh './output'
                 }
             }
         }
